@@ -5,6 +5,7 @@ import TodoItemType from "../../types/TodoItem";
 import TodoItem from "./TodoItem";
 import TodoItemCreator from "./TodoItemCreator";
 import TodoListFilters from "./TodoListFilters";
+import TodoListStats from "./TodoListStats";
 
 const TodoList = () => {
   // changed from todoListState to filteredTodoListState
@@ -13,7 +14,7 @@ const TodoList = () => {
 
   return (
     <>
-      {/* <TodoListStats /> */}
+      <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
 
