@@ -1,7 +1,7 @@
 import { selector } from "recoil";
 import textState from "./textState";
 
-const charCountState = selector({
+const charCountState = selector<number>({
   key: "charCountState",
   get: ({ get }) => {
     const text = get(textState);

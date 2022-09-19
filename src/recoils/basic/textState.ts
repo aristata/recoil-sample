@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
-const textState = atom({
+const textState = atom<string>({
   key: "textState",
   default: ""
 });

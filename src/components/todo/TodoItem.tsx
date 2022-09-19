@@ -57,12 +57,13 @@ const TodoItem = ({ item }: TodoItemProps) => {
 
   return (
     <div>
-      <input type="text" value={item.text} onChange={editItemText} />
       <input
         type="checkbox"
         checked={item.isComplete}
         onChange={toggleItemCompletion}
       />
+      <input type="text" value={item.text} onChange={editItemText} />
+
       <button onClick={deleteItem}>삭제</button>
     </div>
   );
